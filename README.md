@@ -14,12 +14,12 @@ public class Human
 }
 ```
 
-We can call getter:
+Call getter:
 ```csharp
 var age = GetSetUtility.Get((Human x) => x.GrandParent.Age)(person);
 ```
 
-We can call setter
+Call setter
 ```csharp
 GetSetUtility.Set((Human x) => x.GrandParent.Age)(person, updatedAge);   // void
 ```
